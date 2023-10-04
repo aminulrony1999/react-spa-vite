@@ -1,15 +1,17 @@
-import './Header.css';
-import logo from '../../images/Logo.svg';
+import "./Header.css";
+import logo from "../../images/Logo.svg";
 const Header = () => {
-    return (
-        <div className = 'header'>
-            <img src={logo} alt="" />
-            <a href="1">1</a>
-            <a href="2">2</a>
-            <a href="3">3</a>
-            <a href="4">4</a>
-        </div>
-    );
+  return (
+    <nav className="header">
+      <img src={logo} alt="" />
+      <div>
+        <a href="/shop">shop</a>
+        <a href="/order">order</a>
+        <a href="/inventory">Inventory</a>
+        <a href="/login">login</a>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
