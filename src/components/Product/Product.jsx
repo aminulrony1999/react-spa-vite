@@ -5,10 +5,12 @@ const Product = (props) => {
     return (
         <div className = "product">
             <img src={img} alt="Fetching image from api failed." />
-            <h2>{name}</h2>
-            <h3>Price : {price}</h3>
-            <h3>Available stock : {stock}</h3>
-            <small>Rating : {ratings}</small>
+            <div className="product-info">
+            <h6 className ='product-name'>{name}</h6>
+            <p>Price : ${price}</p>
+            <p>Manufacturer: {seller}</p>
+            <p>Rating : {ratings} Stars</p>
+            </div>
         </div>
     );
 };
