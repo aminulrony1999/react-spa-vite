@@ -2,6 +2,7 @@
     width : 300px;
     height : 510px;
     border : 1px solid #95A0A7;
+    position: relative;
 }
 div.product img{
     width : 286px;
@@ -11,6 +12,7 @@ div.product img{
 }
 .product-name{
     margin-top: 0px;
+    margin-bottom: 0px;
     font-family : 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -21,4 +23,18 @@ div.product img{
 }
 .product-info{
     margin-left: 14px;
+}
+.product-info p{
+    margin-top: 5px;
+}
+.btn-cart{
+    background-color: #FFE0B3;
+    border: 1px solid #95A0A7;
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.btn-cart:hover{
+    background-color: orange;
 }
